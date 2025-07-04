@@ -1,0 +1,66 @@
+.sale-detail-row {
+    background-color: #f9f9f9;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.sale-detail-row .form-control {
+    height: calc(1.5em + 0.75rem + 2px);
+}
+
+.remove-detail {
+    margin-top: 32px;
+}
+
+.alert-dismissible .close {
+    padding: 0.75rem 1.25rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+#salesTable th, #salesTable td {
+    white-space: nowrap;
+}
+
+.badge-success {
+    background-color: #28a745;
+}
+
+.badge-info {
+    background-color: #17a2b8;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+}
+
+
+.btn-print {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.btn-print:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+
+@media (max-width: 768px) {
+    .btn-group-sm .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.875rem;
+    }
+}

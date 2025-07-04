@@ -1,0 +1,328 @@
+/* Custom styles for Controlled Drug Management */
+
+/* Statistics Cards */
+.small-box {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.small-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Table Enhancements */
+#controlledDrugTable {
+    font-size: 13px;
+}
+
+.controlled-log-code {
+    background-color: #e9ecef;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+}
+
+.medicine-info strong {
+    color: #007bff;
+    font-size: 13px;
+}
+
+.medicine-info small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.patient-info strong {
+    color: #28a745;
+    font-size: 13px;
+}
+
+.patient-info small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.doctor-info strong {
+    color: #fd7e14;
+    font-size: 13px;
+}
+
+.doctor-info small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.quantity-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+}
+
+.datetime-info strong {
+    color: #6f42c1;
+    font-size: 13px;
+}
+
+.datetime-info small {
+    color: #6c757d;
+    font-size: 11px;
+}
+
+.employee-name {
+    color: #20c997;
+    font-weight: 500;
+}
+
+/* Status badges */
+.badge-success {
+    background-color: #28a745 !important;
+}
+
+.badge-warning {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+}
+
+/* Table row highlighting */
+.table-warning {
+    background-color: rgba(255, 193, 7, 0.1) !important;
+}
+
+.table-warning:hover {
+    background-color: rgba(255, 193, 7, 0.2) !important;
+}
+
+/* Button groups */
+.btn-group-sm > .btn {
+    padding: 0.25rem 0.4rem;
+    font-size: 0.75rem;
+}
+
+/* Modal enhancements */
+.modal-lg .modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    border-radius: 10px 10px 0 0;
+}
+
+/* Filter panel */
+.card.collapsed-card .card-body {
+    display: none;
+}
+
+.card-header .btn-tool {
+    color: #fff;
+}
+
+/* Alert enhancements */
+.alert {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* DataTable customizations */
+.dataTables_wrapper .dataTables_length select {
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 20px;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+}
+
+.dataTables_wrapper .dataTables_info {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+/* Loading spinner */
+.fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .table {
+        font-size: 12px;
+    }
+    
+    .badge {
+        border: 1px solid #000;
+        color: #000 !important;
+        background-color: transparent !important;
+    }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 5px;
+        border-radius: 4px !important;
+    }
+    
+    .small-box {
+        margin-bottom: 15px;
+    }
+    
+    .table-responsive {
+        font-size: 12px;
+    }
+    
+    .medicine-info,
+    .patient-info,
+    .doctor-info {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 120px;
+    }
+}
+
+/* Custom scrollbar for modals */
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Highlight pending approvals */
+.table-warning .badge-warning {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Success/Error message styling */
+.alert .icon {
+    margin-right: 8px;
+}
+
+/* Card tools enhancement */
+.card-tools .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+/* Statistics cards hover effect */
+.small-box .icon {
+    transition: all 0.3s ease;
+}
+
+.small-box:hover .icon {
+    transform: scale(1.1);
+}
+
+/* Filter form enhancements */
+#filterForm .form-group label {
+    font-weight: 600;
+    color: #495057;
+    font-size: 13px;
+}
+
+#filterForm .form-control {
+    border-radius: 6px;
+    font-size: 13px;
+}
+
+#filterForm .btn {
+    border-radius: 6px;
+}
+
+/* Detail modal table styling */
+.modal-body .table-sm td {
+    padding: 0.5rem 0.75rem;
+    border-top: 1px solid #dee2e6;
+}
+
+.modal-body .table-sm tr:first-child td {
+    border-top: none;
+}
+
+.modal-body h5 {
+    color: #495057;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Status indicators */
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
